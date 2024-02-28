@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form example</title>
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Form di raccolta dati studenti</h1>
+      <nav>
+        <!-- qui dentro ci va la barra di navigazione con i link -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="firstname">Il tuo nome</label>
+          <input
+            id="firstname"
+            type="text"
+            placeholder="Mario"
+            required
+            autofocus
+            minlength="2"
+            maxlength="8"
+          />
+          <!-- "Alessandro" non ci entra :( -->
+        </div>
+        <div>
+          <label for="lastname">Il tuo cognome</label>
+          <input
+            id="lastname"
+            type="text"
+            placeholder="Rossi"
+            maxlength="12"
+            required
+          />
+        </div>
+        <div>
+          <label for="age">La tua età</label>
+          <input id="age" type="number" min="18" disabled />
+        </div>
+        <div>
+          <label for="favouritecolor">Il tuo colore preferito</label>
+          <input id="favouritecolor" type="color" />
+        </div>
+        <div>
+          <label for="bio">Parlaci un po' di te</label>
+          <textarea rows="3" maxlength="100"></textarea>
+        </div>
+        <div>
+          <label for="team">Che squadra sei?</label>
+          <select id="team">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+          </select>
+        </div>
+        <div>
+          <!-- un bottone inserito in un tag <form> riceve in modo predefinito un comportamento di "submit" -->
+          <!-- se voglio evitare che il botton invii il form alla pressione, è necessario sovrascrivere il suo
+                type con un altro valore es. "button" -->
+          <button type="submit">INVIA I DATI</button>
+          <button type="reset">RESET</button>
+          <button type="button" onclick="alert('HAI CLICCATO POPUP')">
+            POPUP
+          </button>
+        </div>
+      </form>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/_TN0_qa8Z8Q?si=JmA5dEYMNZkWYXcB"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </main>
+    <footer>©EPICODE</footer>
+  </body>
+</html>

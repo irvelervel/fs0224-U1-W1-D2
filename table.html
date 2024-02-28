@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table example</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- il tag header ("intestazione") contiene tutte le informazioni relative
+        agli elementi superiori nella pagina (es. loghi, barre di navigazione, hamburger menu etc.) -->
+    </header>
+    <main>
+      <!-- il tag main ("principale") racchiude i contenuti principali della pagina
+        (es. immagini, sezioni, articoli, paragrafi, liste, audio/video, etc.) -->
+      <table>
+        <!-- una tabella può opzionalmente contenere un tag <caption> per un titoletto -->
+        <thead>
+          <caption>
+            Studenti di EPICODE
+          </caption>
+          <!-- poi dentro table andrebbero inserite solamente righe -->
+          <tr>
+            <!-- solitamente, la prima tr ospita i titoli delle colonne (se presenti) -->
+            <!-- i titoli delle colonne si specificano semanticamente con dei tag <th> -->
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Email</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- per ospitare le singole celle con i dati si utilizzano dei tag <td> -->
+            <!-- primo studente: Mario Rossi mario@rossi.it 1 -->
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>mario@rossi.it</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Luigi</td>
+            <td>Rossi</td>
+            <td>luigi@rossi.it</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Gianmario</td>
+            <td>Rossi</td>
+            <td>gianmario@rossi.it</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Gianluigi</td>
+            <td>Rossi</td>
+            <td>gianluigi@rossi.it</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Studenti: 4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <!-- il tag footer ("piè di pagina") contiene gli elementi conclusivi della pagina
+        (es. copyright, link associati, collegamenti alle sezioni del sito, riferimenti social, anno etc.) -->
+    </footer>
+  </body>
+</html>
